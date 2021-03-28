@@ -5,11 +5,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/redminote8es/Ginkgo/MIUI/MIUIPLUS_A11_Ginkgo_210320.By_YyLLHdz.zip
+  ROM_URL: https://netix.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/21.3.24/xiaomi.eu_multi_MI9LiteMICC9_21.3.24_v12-11.zip
   ROM_NAME: MIUI
   TZ: Asia/Kolkata
   MIR: wet
-  ZIP_NAME: MIUI-PLUS11
+  ZIP_NAME: MIUI
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/berkays0733/ErfanGSIs.git  ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/senolars45/ErfanGSIs-VelanGSIs.git  ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
